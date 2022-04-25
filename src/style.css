@@ -1,3 +1,137 @@
 body {
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: white;
+    font-size: 16px;
+}
+
+nav {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem;
+}
+
+.site-logo  {
+    width: 60px;
+}
+
+.site-logo-title  {
+    color: #ffffffe7;
+    font-weight: 400;
+    letter-spacing: 2.7px;
+}
+
+.site-logo-title > span {
+    font-weight: 700;
+    font-size: larger;
+}
+
+section {
+    padding: 2.5rem;
+}
+
+.post-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image-container    {
+    height: 19.25rem;
+    width: 16.56rem;
+    min-width: 14.56rem;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.location-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0.5rem;
+}
+
+.location-icon  {
+    color: #F55A5A;
+}
+
+.location   {
+font-size: 0.8rem;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 0.17em;
+padding: 0 2rem 0 0.5rem;
+}
+
+.map-url    {
+    color: #FFFFFF99;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.post-title  {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    margin-top: 0;
+}
+
+.description    {
+    opacity: 80%;
+    font-weight: 400;
+    line-height: 1.5rem;
+    width: 60%;
+}
+
+hr  {
+    opacity: 30%;
+    margin: 1.5rem 0;
+}
+
+@media only screen and (max-width : 768px) {
+
+    .image-container    {
+        height: 27.25rem;
+        width: 25.56rem;
+        min-width: 19.56rem;
+        border-radius: 5px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .location-container {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0 1.8rem;
+    }
+
+    .post-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+    
+    .description    {
+        opacity: 80%;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 959px) {
+
+    .description    {
+        opacity: 80%;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 100%;
+    }
 }
