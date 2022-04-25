@@ -1,15 +1,20 @@
 import Nav from "./components/Nav"
 import BlogSection from "./components/BlogSection"
-
-
-
+import Data from "./components/Data"
 
 export default function App()   {
-    console.log("ready")
+    const posts = Data.map(post => {
+        console.log(post)
+        return <BlogSection
+                key = {post.id}
+                {...post}
+        />
+    })
+
     return (
         <div>
             <Nav />
-            <BlogSection />
+            {posts}
         </div>
     )
 }
