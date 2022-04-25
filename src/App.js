@@ -10,7 +10,6 @@ export default function App()   {
                 {...post}
         />
     })
-
     return (
         <div>
             <Nav />
